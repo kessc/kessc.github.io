@@ -2,161 +2,192 @@
 <html lang="en"> 
 
 	<head>
-		<link rel="stylesheet"
-				href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-		<style>
-		body {
-			font-family: 'Poppins', sans-serif;
-		}
-		h1 {
-			font-size: 80px;
-			font-weight: bolder;
-		}
-		h2 {
-			font-size: 20px;
-			color: cornflowerblue
-		}
-		h3 {
-			font-size: 16px;
-			color: cornflowerblue
-		}
-		p {
-			font-size: 12px;
-			font-weight: lighter;
-		}
-		menu {
-			color: cornflowerblue
-			font-weight: 500px;
-		}
-	</style>
-		<title>
-		Graphic Designer | KM DeWitt Design
-		</title>
+		<!-- This is where everything that needs to be read by the browser but not rendered visually goes -->
+
+			<title>	Graphic Designer | KM DeWitt Design </title>
+
+		<link rel="stylesheet"  type="text/css" href="css/normalize.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/grid.css">
+
+
+		<!--Font Info -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&display=swap" rel="stylesheet">
 	</head>
+
+<!-- The part of the code that actually displays in the browser begins here -->
+
 	<body>
-		<header>
-			<nav>
-				<menu style="background-color: aliceblue;">
-					<a href="#">
+		<!-- The header is where the nav lives -->
+		<header class="container-fluid">
+			<div class="row">
+
+				<nav>
+					<ul>
+						<li><a href="index.html"></a></li>
 						<img src="KM DeWitt-13.png" alt="Logo" width="175px">
-					</a>
-					<a href="https://www.kmdewitt.design/publication-design"><b>PUBLICATION</a>
-					<a href="https://www.kmdewitt.design/branding"><b>BRANDING</a>
-					<a href="https://www.kmdewitt.design/typography"><b>TYPOGRAPHY</a>
-					<a href="https://www.kmdewitt.design/information-design"><b>INFO DESIGN</a>
-					<a href="https://www.kmdewitt.design/product-packaging"><b>PACKAGING</a>
-					<a href="https://www.kmdewitt.design/advertising"><b>ADVERTISING</a>
-					<a href="https://www.kmdewitt.design/illustration"><b>ILLUSTRATION</a>
-					<a href="https://www.kmdewitt.design/video-motion-graphics"><b>VIDEO / MOTION GRAPHICS</a>
-					<a href="https://www.kmdewitt.design/ux-ui-design"><b>UX / WEB</a>
-					<a href="https://www.kmdewitt.design/client-projects"><b>CLIENT WORK</a>
-					<a href="https://www.kmdewitt.design/about-me"><b>ABOUT</a>
-				</menu>
-			</nav>
-			<hr>
+						<li><a href="https://www.kmdewitt.design/about-me"><b>ABOUT</a></li>
+						<li><a href="https://www.kmdewitt.design/client-projects"><b>CLIENT WORK</a></li>
+						<li><a href="https://www.kmdewitt.design/ux-ui-design"><b>UX / WEB</a></li>
+						<li><a href="https://www.kmdewitt.design/video-motion-graphics"><b>VIDEO / MOTION GRAPHICS</a></li>
+						<li><a href="https://www.kmdewitt.design/illustration"><b>ILLUSTRATION</a></li>
+						<li><a href="https://www.kmdewitt.design/advertising"><b>ADVERTISING</a></li>
+						<li><a href="https://www.kmdewitt.design/product-packaging"><b>PACKAGING</a></li>
+						<li><a href="https://www.kmdewitt.design/information-design"><b>INFO DESIGN</a></li>
+						<li><a href="https://www.kmdewitt.design/typography"><b>TYPOGRAPHY</a></li>
+						<li><a href="https://www.kmdewitt.design/branding"><b>BRANDING</a></li>
+						<li><a href="https://www.kmdewitt.design/publication-design"><b>PUBLICATION</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
+
 		<!-- Section 1 -->
-		<div>
-		<style type="text/css">
 
-		</style>
-			<video width="500px"
-			padding="84px 56px 30px 567px;" 
-			autoplay="true" 
-			muted="true" 
-			loop="true" 
-			features: [playpause]>
-				<source src="Welcome to my portfolio (1).mp4" 
-				type="video/mp4" 
-				alwaysShowControls="false">
-			</video>
-			<h1>I AM KESSIA</h1>
-			<h3>(Marley DeWitt)</h3>
-			<h3>Graphic Designer & Digital Illustrator</h3>
-			<a href="https://www.kmdewitt.design/about-me">Get To Know Me</a>
-		</div>
-		<!-- Section 2 -->
-			<img src="griff.jpg" width="400px">
-			<h2>THE GRIFF</h2>
-			<h3> Redesigned for 2021 </h3>
-			<p> MacEwan's Griff Magazine was redesigned with the intention of creating an edition that celebrates sustainability.</p>
-			<p>Paper textures were incorporated to encourage the concept of recycling everyday items and making the most use of them. </p>
-			 <a href="https://www.kmdewitt.design/publication-design">More Info</a>
-		<!-- Section 3 -->
-		<div>
-				<img src="Card-Mockup.jpg" width="250px">
-				<img src="georgia.jpg" width="250px">
-				<img src="gr.jpg" width="250px">
-				<img src="Wedding Mockup fake names.jpg" width="250px">
-		</div>
-	<footer>
+		<section class="container-fluid" id="hero">
+			<div class="container">
+				<div class="row">
+					<section>
+						<div>
+							<h4> CHECK OUT MY PORTFOLIO</h4>
+						</div>
+						<video 
+							width="900px"
+							autoplay="true" 
+							muted="true" 
+							loop="true" 
+							features: [playpause]>
+							<source src="Welcome to my portfolio (1).mp4" 
+							type="video/mp4" 
+							alwaysShowControls="false">
+						</video>
+					</section>
+					<div>
+						<div class="row">
+							<h1>
+								<span>I AM</span>
+							</h1>
+							<h1>
+								<span>KESSIA</span>
+							</h1>
+							<h3>
+								<span>(Marley DeWitt)</span>
+							</h3>
+							<h3>
+								<span>Graphic Designer & Digital Illustrator</span>
+							</h3>
+							<a href="https://www.kmdewitt.design/about-me">Get To Know Me</a>
+						</div>
+					</div>
+				</div>
+			</div> <!--Container Ends-->
+		</section>
 
-		<style>
-		* {
-			box-sizing: border-box;
-		}
-.column {
-	float: left;
-	width: 33.33%;
-	height: auto;
-	padding: 10px;
-}
 
-.row:after {
-		content: "";
-		display: table;
-		clear: both
-}
+		<!-- Section 2, below the "Hero" Section, The Griff Promo-->
 
-		</style>
-	</footer>
-
-	<h2> KM DeWitt Design </h2>
-
-		<div class="row">
-			<div class="column" style="background-color: #333335;">
-				<h2>CONTACT</h2>
-				<p style="color: white;">Kessia Cherkewick</p>
-				<p style="color: white;">Alberta</p>
-				<p style="color: white;">Canada</p>
-				<p style="color: white;">km.dewitt.design@gmail.com</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
+		<section class="container" id="blue">
+			<section class="col-4">
+				<img src="griff.jpg" width="400px" alt="The Griff Design">
+				<h1>THE GRIFF</h1>
+				<h3> Redesigned for 2021 </h3>
+				<p> MacEwan's Griff Magazine was redesigned with the intention of creating an edition that celebrates sustainability.
+				Paper textures were incorporated to encourage the concept of recycling everyday items and making the most use of them. </p>
+				<div class="row">
+				 <a href="https://www.kmdewitt.design/publication-design">More Info</a>
 			</div>
-			<div class="column" style="background-color: #333335;">
-				<h2> NAVIGATE </h2>
-				<p style="color: white;"> Publication</p>
-				<p style="color: white;"> Branding</p>
-				<p style="color: white;"> Typography </p>
-				<p style="color: white;"> Info Design </p>
-				<p style="color: white;"> Packaging </p>
-				<p style="color: white;"> Advertising </p>
-				<p style="color: white;"> Illustration </p>
-				<p style="color: white;"> Video / Motion Graphics </p>
-				<p style="color: white;"> UX / Web </p>
-				<p style="color: white;"> Client Work </p>
-				<p style="color: white;"> About Me </p>
+			</section>
+
+		</section>
+
+		<!-- Section 3, Portfolio Example Images-->
+
+		<section class="container" id="portfolio">
+			<div class="row">
+				<section class="col-12"> <!-- This section splits into 2 parts so we need to create a <section> within a <section> -->
+					<h1> Portfolio Pieces </h1>
+				</section>
 			</div>
-			<div class="column" style="background-color: #333335;">
-				<h2> BACK TO TOP </h2>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
-				<p style="color: #333335;">.</p>
+
+			<div class="row">
+				<section class="col-4">
+					<img src="Card-Mockup.jpg" width="225px" alt="DIN Postcards">
+					<h2>Wreck This Typeface Postcards</h2>
+					<p>A set of postcards were created with the intention of pushing the typeface DIN to its limits. </p>
+				</section>
+
+				<section class="col-4">
+					<img src="georgia.jpg" width="275px">
+					<h2> Experimental Typographic Poster </h2>
+					<p>An experimental poster was created in order to showcase the versatility of the typeface Georgia. </p>
+				</section>
+
+				<section class="col-4">
+					<img src="gr.jpg" width="275px" alt="Groundhog Day Infographic">
+					<h2> Infographic Movie Poster </h2>
+					<p> An infographic movie poster was created to show the converging plot elements of the film Groundhog Day. </p>
+
+				<section class="col-4">
+					<img src="Wedding Mockup fake names.jpg" width="225px" alt="Wedding Stationery">
+					<h2> Wedding Stationery </h2>
+					<p> A Wedding Stationery package was created for clients getting married in 2022. </p>
+
+				</div>
+			</section>
+
+
+		<!-- Footer. Ensure it is on the same indent level as the header -->
+
+		<footer class="container-fluid">
+			<div class="container">
+				<h2> KM DeWitt Design </h2>
+				<nav class="left-col"> <!-- There are 3 columns of Nav links -->
+					<ul>
+						<h2> CONTACT </h2>
+						<h4>Kessia Cherkewick</h4>
+						<h4>Alberta</h4>
+						<h4>Canada</h4>
+						<li><a href="#">km.dewitt.design@gmail.com</a></li>
+					</ul>
+				</nav>
+				<nav class="center-col">
+					<ul>
+						<h2> NAVIGATE </h2>
+						<li><a href="#">Publication</a></li>
+						<li><a href="#">Branding</a></li>
+						<li><a href="#">Typography</a></li>
+						<li><a href="#">Info Design</a></li>
+						<li><a href="#">Packaging</a></li>
+						<li><a href="#">Advertising</a></li>
+						<li><a href="#">Illustration</a></li>
+						<li><a href="#">Video / Motion Graphics</a></li>
+						<li><a href="#">UX / WEB</a></li>
+						<li><a href="#">Client Work</a></li>
+						<li><a href="#">About Me</a></li>
+					</ul>
+				</nav>
+				<nav class="right-col">
+					<ul>
+						<li><a class="btt" href="index.html">BACK TO TOP</a></li>
+					</ul>
+				</nav>
+				</div>
+
+<!-- Including a section for copyright -->
+
+			<div>
+				<section class="container" class="copyright">
+					<p class="copyright"> Made in Alberta, Canada. &copy; 2021 KM DeWitt Design.
+					</p>
+				</section>
+					<a href="#">Terms</a>
+					<a href="#">Privacy</a>
+					<a href="#">Legal</a>
+					<a href="#">Security</a>							
 			</div>
-		</div>
-	</footer>
+
+		</footer>
 	</body>
 </html>
