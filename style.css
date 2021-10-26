@@ -88,6 +88,7 @@ uses IDs:
 
 
 	header {
+		z-index: 300;
 		position: fixed;
 		background-color: white;
 	}
