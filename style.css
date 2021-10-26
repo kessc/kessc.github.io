@@ -188,6 +188,10 @@ uses Combinators:
 
 	/* The Griff */
 
+	#blue div {
+		z-index: 0;
+	}
+
 	#blue img {
 		margin-top: 30px;
 	}
